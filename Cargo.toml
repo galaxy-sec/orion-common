@@ -1,0 +1,22 @@
+[package]
+name = "orion_common"
+authors = ["wukong<sec-wukong@outlook.com>"]
+edition = "2024"
+version = "0.1.0"
+
+[dependencies]
+# thiserror = "~2.0"
+orion-error = "0.3"
+derive_more = { version = "2.0", features = ["full"] }
+derive-getters = "~0.5"
+wildmatch = "~2.4"
+ipnet = "~2.11"
+anyhow = "~1.0"
+toml = "~0.9"
+serde = "~1.0"
+serde_yaml = "~0.9"
+serde_ini = "~0.2.0"
+serde_json = "~1.0"
+thiserror = "~2.0"
+serde_derive = "~1.0"
+chrono = { version = "~0.4", features = ["serde"] }
