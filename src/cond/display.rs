@@ -16,11 +16,11 @@ where
                         write!(f, "{v} ")?;
                     }
                     _ => {
-                        write!(f, "({}) ", v)?;
+                        write!(f, "({v}) ")?;
                     }
                 },
                 ExpressEnum::Compare(v) => {
-                    write!(f, "{} ", v)?;
+                    write!(f, "{v} ")?;
                 }
             }
         }
@@ -144,6 +144,6 @@ impl CmpSymbolDef for RustSymbol {
         "<"
     }
     fn symbol_var(name: &str) -> String {
-        format!("${}", name)
+        format!("${name}",)
     }
 }

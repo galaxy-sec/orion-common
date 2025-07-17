@@ -268,7 +268,7 @@ mod tests {
     type XMap<T> = HashMap<&'static str, T>;
     impl<T> ValueGet<T> for HashMap<&'static str, T> {
         fn value_get(&self, var: &str) -> Option<&T> {
-            return self.get(var);
+            self.get(var)
         }
     }
     impl Condition<XMap<u32>> for LogicExpress<u32, RustSymbol> {
